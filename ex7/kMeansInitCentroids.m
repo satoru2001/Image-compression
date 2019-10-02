@@ -13,6 +13,9 @@ centroids = zeros(K, size(X, 2));
 %               the dataset X
 %
 m = size(X,1);
+
+% randperm(a,b) initializes a random matrix of size a x b
+%
 indices = randperm(m,K);
 centroids = X(indices,:);
 % =============================================================
